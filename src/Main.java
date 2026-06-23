@@ -2,7 +2,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 import java.util.Scanner;
 
-public class ShipCalculator {
+public class Main {
     public static void main(String[] args) {
         double itemPrice = 0;
         double shippingCost = 0;
@@ -20,5 +20,10 @@ public class ShipCalculator {
         }
 
         totalCost = itemPrice + shippingCost;
+
+        System.out.println("The shipping cost is $" + shippingCost);
+        System.out.println("The total price is $" + totalCost);
+
+        input.close();
     }
 }
